@@ -1,0 +1,28 @@
+{
+  "name": "smartbrainapi",
+  "version": "1.0.0",
+  "description": "api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ravikumarsd/SmartBrainAPI.git"
+  },
+  "author": "Ravikumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ravikumarsd/SmartBrainAPI/issues"
+  },
+  "homepage": "https://github.com/Ravikumarsd/SmartBrainAPI#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
