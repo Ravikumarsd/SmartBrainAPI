@@ -5,11 +5,9 @@ const app = new Clarifai.App({
    });
 
 const handleAPICall = (req,res) => {
-  app.models
+      app.models
             .predict(Clarifai.FACE_DETECT_MODEL,req.body.input)
-            .then(data => {
-                res.json(data);
-            })
+            .then(data => res.json(data))
             .catch(err => res.status(400).json("API connection failed"))
 }
 
@@ -22,10 +20,11 @@ const handleImages = (req, res, db) => {
             console.log(entries[0]);
             res.json(entries[0]);
         })
-        .catch(err => res.status(400).json("Unable to get entries"))
+        .catch(err => res.status(400).json("Unable to get entries"));
 }
 
 module.exports = {
      handleImages,
      handleAPICall
+
 }
