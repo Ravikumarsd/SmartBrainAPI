@@ -4,7 +4,6 @@
   "description": "api",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,5 @@
     "knex": "^0.15.2",
     "pg": "^7.6.0"
   },
-  "devDependencies": {
-    "nodemon": "^1.18.5"
-  }
+  "devDependencies": {}
 }
