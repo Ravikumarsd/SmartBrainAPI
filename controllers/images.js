@@ -10,7 +10,7 @@ const handleAPICall = (req,res) => {
             .then(data => {
                 res.json(data);
             })
-           .catch(err => res.status(400).json("Unable to communicate with clarifai API")) 
+            .catch(err => res.status(400).json("API connection failed"))
 }
 
 const handleImages = (req, res, db) => {
@@ -26,6 +26,6 @@ const handleImages = (req, res, db) => {
 }
 
 module.exports = {
-    handleImages,
-    handleAPICall
+     handleImages,
+     handleAPICall
 }
